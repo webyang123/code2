@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>科经务联</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../resource/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../resource/css/chart.css">
+	<link rel="stylesheet" href="../resource/css/main.css">
+	<script type="text/javascript" src="../resource/lib/jquery-2.2.3.min.js"></script>
+	<!-- <script type="text/javascript" src="../resource/js/chart.js"></script> -->
+	<!-- <script type="text/javascript" src="../resource/lib/jquery.connections.js"></script> -->
+	<script type="text/javascript" src="../resource/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resource/lib/echarts.min.js"></script>
+	<script type="text/javascript" src="../resource/js/echarts.js"></script>
+	<script type="text/javascript" src="../resource/js/adapt.js"></script>
+	<script type="text/javascript" src="../resource/js/main.js"></script>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="kjwl_container">
+		<div class="kjwl_header">
+			<a href="javascript:void(0)">
+				<span id="kjwl_header_back" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			</a>
+			<a class="kjwl_header_title" href="javascript:void(0)">科经务联</a>
+			<div class="dropdown" style="display: inline-block;">
+				<span id="kjwl_header_link" class="glyphicon glyphicon-align-justify" aria-hidden="true" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+				    <ul class="dropdown-menu" style="font-size: 0.6rem;" aria-labelledby="dropdownMenu1">
+					    <li><a href="javascript:void(0)">返回首页</a></li>
+					    <li><a href="javascript:void(0)">产品简介</a></li>
+					    <li><a href="javascript:void(0)">往期报告</a></li>
+					    <li><a href="javascript:void(0)">风险提示</a></li>
+					    <li><a href="javascript:void(0)">实时大盘</a></li>
+					    <li><a href="javascript:void(0)">专家解读</a></li>
+				 	</ul>
+				</div>
+		</div>
+		<div class="kjwl_search">		
+			<div class="input-group">
+				<select name="" id="kjwl_select_type" class="form-control">
+					<option value="1">技术</option>
+					<option value="2">人才</option>
+					<option value="3">企业</option>
+					<option value="4">股票</option>
+					<option value="5">代码</option>
+				</select>
+	  			<input type="text" class="form-control" placeholder="技术/人才/企业/股票/代码">
+	  			<span id="kjwl_header_btn" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			</div>
+		</div>
+		<div class="kjwl_chart" style="width: 16rem;position: relative;">
+			<span style="position: absolute;left: 0.2rem;top: 7rem;" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span style="position: absolute;right: 0.2rem;top: 7rem;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<div id="main" style="width: 14rem;height:14rem;margin:0 auto;">
+
+  		</div>
+		</div>
+		<div class="kjwl_main">
+			<ol id="kjwl_nav">
+				<li class="active">综合</li>
+				<li>技术</li>
+				<li>机构</li>
+				<li>专家</li>
+			</ol>
+			<ul id="kjwl_detail_synth" class="kjwl_detail">
+				<li>
+					&nbsp;<span>7月热点技术：</span>
+					<a href="javascript:void(0)">氢氧化锂、</a>
+					<a href="javascript:void(0)">碳酸锂、</a>
+					<a href="javascript:void(0)">锂离子电池</a>
+				</li>
+			</ul>
+			<ul id="kjwl_detail_tech" class="kjwl_detail" style="display: none;">
+				<li>
+					<h5>氢氧化锂:</h5>
+					<p>氢氧化锂可用做光谱分析的展开剂、润滑油。碱性蓄电池电解质的添加剂，可增加电容量12%～15%，提高使用寿命2～3倍。</p>
+				</li>
+			</ul>
+			<ul id="kjwl_detail_org" class="kjwl_detail"  style="display: none;">
+				<div class="org_list">
+				<img class="org_move" src="../resource/images/u457.png" alt="">
+				<ol class="org_company">
+					<li>
+						<a href="javascript:void(0)">
+							<span class="org_title">格林美股份有限公司</span><br>
+							<span class="monthly_yield">月赢率：<b>10%</b></span>
+						</a>	
+						<span class="org_bit_box"><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""></span>		
+						<p class="org_desc">2001年12月28日在深圳注册成立，2010年1月登陆深圳证券交易所中小企业板，股票代码 002340 ，是中国开采“城市矿山”资源第一支股票、再生资源行业和</p>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<span class="org_title">青海盐湖工业股份有公司</span><br>
+							<span class="monthly_yield">月赢率：<b>10%</b></span>
+						</a>	
+						<span class="org_bit_box"><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""></span>		
+						<p class="org_desc">青海盐湖工业股份有限公司（中文简称“盐湖股份”，英文全称QingHai Salt Lake Industry Co.,Ltd.，证券代码000792）是青海省国有资产监督管理委员会管理的</p>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<span class="org_title">四川雅化实业集团有限公司</span><br>
+							<span class="monthly_yield">月赢率：<b>10%</b></span>
+						</a>	
+						<span class="org_bit_box"><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""></span>		
+						<p class="org_desc">雅化集团是中国民用爆破器材生产制造、工程爆破和矿山一体化服务的专业提供商，致力于打造具有国际竞争力的民爆产业集团。</p>
+					</li>
+				</ol>
+				<ol class="org_college" style="display: none;">
+					<li>
+						<a href="javascript:void(0)">
+							<span class="org_title">北京大学</span>
+						</a>	
+						<span class="org_bit_box"><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""></span>		
+						<p class="org_desc">北京大学（Peking University）简称“北大”，诞生于1898年，初名京师大学堂，是中国近代第一所国立大学，也是第一个以“大学”之名创办的学校，其成</p>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<span class="org_title">清华大学</span>
+						</a>	
+						<span class="org_bit_box"><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""></span>		
+						<p class="org_desc">清华大学（Tsinghua University），简称“清华”，由中华人民共和国教育部直属，中央直管副部级建制的全国重点大学，位列“211工程”、“985工程”，入选“珠峰计划”、“</p>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<span class="org_title">浙江大学</span>
+						</a>	
+						<span class="org_bit_box"><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""></span>		
+						<p class="org_desc">浙江大学（Zhejiang University），简称“浙大”，坐落于“人间天堂”杭州。前身是1897年创建的求是书院，是中国人自己最早创办的新式高等学校之一。1928年更名为国立浙江大学。中华民国时期，浙江大学在竺可桢老校长的带领下，崛起为民国最高学府之一，迎来了浙大百年历史中最辉煌</p>
+					</li>
+				</ol>
+				<ol class="org_research" style="display: none;">
+					<li>
+						<a href="javascript:void(0)">
+							<span class="org_title">中国科学院</span>
+						</a>	
+						<span class="org_bit_box"><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""></span>		
+						<p class="org_desc">中国科学院（Chinese Academy of Sciences）成立于1949年11月，为中国自然科学最高学术机构、科学技术最高咨询机构、自然科学与高技术综合研究发展中心。</p>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<span class="org_title">国家教委碳资源综合利用开放研究实验室</span>
+						</a>	
+						<span class="org_bit_box"><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""><img class="org_bit" src="../resource/images/u415.png" alt=""></span>		
+						<p class="org_desc">2001年12月28日在深圳注册成立，2010年1月登陆深圳证券交易所中小企业板，股票代码 002340 ，是中国开采“城市矿山”资源第一支股票、再生资源行业和</p>
+					</li>
+				</ol>
+				</div>
+				<div class="org_detail_section" style="display: none;">
+					<p>格林美股份有限公司是一家上市公司，拥有涂明江、金鹏等技术人员。拥有磷酸铁锂、碳酸锂等技术</p>
+					<div class="PJPM_left">
+	                    <div class="PJPM_numA">评价排名</div>
+	                    <img class="bit_one" src="../resource/images/bit_one.jpg" alt="">
+	                    <div class="txt">
+	                        <p>在<span style="color: red;">777</span>家<span title="电力生产" style="color: red; cursor: pointer;"><a style="color: red;" href="javascript:void(0)" target="_blank">同行业</a></span>企业中</p>
+	                        <p>累计排名&nbsp;&nbsp;<span class="t1">第&nbsp;<b style="color: red;">1</b>&nbsp;名</span></p>
+	                        <p>水平位置&nbsp;&nbsp;<span class="t1">前&nbsp;<b style="color: red;">0.13%</b></span></p>
+	                    </div>
+	                    <br>
+	                    <img class="bit_two" src="../resource/images/bit_two.jpg" alt="">
+	                     <div id="box" style="width: 16rem;height: 5rem;"></div>
+		            </div>
+					<div class="NDBX_one">
+						<div class="PJPM_numA">年度表现</div>
+		                <div class="tt">2014 年</div>
+		                <table class="NOBX_TB1">
+		                    <tbody><tr>
+		                        <td>行业排名</td>
+		                        <td class="td1">1 </td>
+		                    </tr>
+		                    <tr>
+		                        <td>授权专利数</td>
+		                        <td class="td1">12881</td>
+		                    </tr>
+		                    <tr>
+		                        <td>发明专利数</td>
+		                        <td class="td1">11758</td>
+		                    </tr>
+		                    <tr>
+		                        <td>发明专利增长率</td>
+		                        <td class="td1">29.92%</td>
+		                    </tr>
+		                    <tr>
+		                        <td>实用专利数量</td>
+		                        <td class="td1">12389</td>
+		                    </tr>
+		                    <tr>
+		                        <td>外观专利数量</td>
+		                        <td class="td1">480</td>
+		                    </tr>
+		                    <tr>
+		                        <td>科技成果数量</td>
+		                        <td class="td1">148</td>
+		                    </tr>
+		                    <tr>
+		                        <td>行业标准数量</td>
+		                        <td class="td1">1</td>
+		                    </tr>
+		                    <tr>
+		                        <td>会议论文数量</td>
+		                        <td class="td1">1036</td>
+		                    </tr>
+		                </tbody></table>
+		            </div>
+				</div>
+			</ul>
+
+			<ul id="kjwl_detail_expert" class="kjwl_detail" style="display: none;">
+				<div class="expert_list">
+					<li>
+					<a href="javascript:void(0)">王永强</a><span>H因子：100</span>
+					<p>格林美股份有限公司</p>
+					</li>
+					<li>
+						<a href="javascript:void(0)">王永强</a><span>H因子：100</span>
+						<p>格林美股份有限公司</p>
+					</li>
+					<li>
+						<a href="javascript:void(0)">王永强</a><span>H因子：100</span>
+						<p>格林美股份有限公司</p>
+					</li>
+					<li>
+						<a href="javascript:void(0)">王永强</a><span>H因子：100</span>
+						<p>格林美股份有限公司</p>
+					</li>
+					<li>
+						<a href="javascript:void(0)">王永强</a><span>H因子：100</span>
+						<p>格林美股份有限公司</p>
+					</li>
+				</div>	
+				<div class="expert_detail" style="display: none;">
+					<h5>王永强</h5>
+					<p><span>工作单位：</span>中国工程院</p>
+					<p><span>其它工作单位：</span>中国工程院</p>
+					<p><span>工作职务：</span>中国计算机学会理事；《中国科学》编委；中国机械工程学会工业设计分会主任；中国人工智能学会副理事长；中国图象图形学会理事长；浙江省科协副主席；国务院学位委员会委员；中国机械工程学会副理事长</p>
+					<p><span>技术职称：</span>教授</p>
+					<p><span>通讯地址：</span>北京市西城区冰窖口胡同2号</p>
+					<p><span>邮政编码：</span>100088</p>
+					<p><span>专业领域：</span>计算机应用；智能CAD</p>
+					<p><span>院士：</span>中国工程院院士</p>
+					<p><span>学科分类名：</span>计算机应用</p>
+					<p class="figure_output">图表 人物文献产出量</p>
+					<div id="porc" style="width: 16rem;height: 10rem;"></div>
+				</div>
+			</ul>
+		</div>
+	</div>
+	<img src="Images/11.jpg" alt="">
+	<img src="11.jpg" alt="">
+</body>
+</html>
